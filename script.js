@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
   gsap.from(".trial-anim", {
-    // x: 1000,
+    x: 1000,
 
     scrollTrigger: {
       scroller: "body",
