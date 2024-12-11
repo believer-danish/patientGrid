@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Grid</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/output.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-black">
+    <main class="my-container min-h-screen bg-[hsl(0,_0%,_97%)]">
+      <!-- Header -->
+      <header
+        class="w-full bg-[#D9D9D980]/50 flex justify-around items-center max-md:flex-col gap-6 font-medium pt-[2.1rem] pb-[1.8rem]"
+      >
+        <!-- logo -->
+        <div class="w-[19rem] h-[3.32rem] header-anim">
+          <img src="/assets/images/logo2.png" alt="logo" />
+        </div>
+        <!-- navigation -->
+        <nav>
+          <ul class="flex items-center gap-[4.5rem]">
+            <li class="cursor-pointer header-anim">Products</li>
+            <li class="cursor-pointer header-anim">Plans</li>
+            <li class="flex cursor-pointer header-anim">
+              More
+              <span class="w-[2.8rem] aspect-square grid place-items-center"
+                ><img
+                  src="assets/images/down_arrow.svg"
+                  alt="down arrow"
+                  class="w-max h-max"
+              /></span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Login -->
+        <div class="flex gap-[3.7rem] items-center">
+          <span class="cursor-pointer header-anim">Login</span>
+          <button
+            class="header-anim text-white cursor-pointer bg-[#2A0896] rounded-[3rem] pt-[1.2rem] pb-[1.4rem] px-[3.2rem] relative overflow-hidden before:absolute before:h-full before:left-0 before:top-0 before:[transition:width_.5s_ease] before:w-0 hover:before:w-full before:bg-red-400"
+          >
+            <span class="relative z-10">Request a demo</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section>
+        <div
+          class="flex flex-col justify-center items-center pt-[8.5rem] font-medium text-center hero-anim1"
+        >
+          <div class="text-[7rem] leading-[9.2rem] capitalize text-[#282828]">
+            <h1>medical software to attract</h1>
+            <h1>and <span class="font-semibold">retain patients</span></h1>
+          </div>
+          <p
+            class="pt-[2.7rem] pb-[4rem] text-[#282828B2]/70 w-full max-w-[60.2rem] text-[2.2rem] leading[3.2rem]"
+          >
+            Patientgrid’s communication platform helps improve patient
+            experience while staff hours.
+          </p>
+          <div
+            class="text-[2.2rem] leading-[3.3rem] font-medium flex gap-[0.5rem] items-center justify-center"
+          >
+            <span class=" ">Start For Free</span>
+            <button class="px-[12px] py-[9px] bg-[#2A0896] rounded-full">
+              <img
+                src="/assets/images/left_arrow.svg"
+                alt="left arrow icon"
+                class="w-max h-max"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tilted section -->
+      <section
+        class="tilt-anim w-full pt-[8.9rem] pb-[8.4rem] -mt-8 flex items-center justify-center bg-[url('/assets/images/rectangle.svg')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="w-[113rem] h-[56.2rem]">
+          <img src="assets/images/dashboard.png" alt=" dashboard image" />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section
+        class="w-full pt-[1.6rem] pb-[10rem] flex flex-col gap-[10.3rem] items-center justify-center"
+      >
+        <!-- service1 -->
+        <div class="service-anim flex max-md:flex-col gap-[5.2rem]">
+          <div
+            class="w-[40.6rem] h-[31.6rem] z-0 relative before:absolute before:w-full before:h-full before:bg-[#9D86D126]/15 before:rounded-[30px] before:z-[0] before:-top-[3.8rem] before:-left-[3.6rem] before:[box-shadow:-3rem_3rem_3rem_#2828280D]"
+          >
+            <div
+              class="inset-0 absolute rounded-[3rem] bg-white/[.56] [box-shadow:-3rem_3rem_3rem_#2828280D] flex flex-col items-center"
+            >
+              <div
+                class="flex gap-[.5rem] w-max rounded-[1rem] bg-[#EFEFEF] [box-shadow:-1rem_1rem_3rem_#00000026] mt-[4.9rem] mb-[2.4rem]"
+              >
+                <img
+                  src="assets/images/star.png"
+                  alt="star image"
+                  class="w-[5.5rem] aspect-square"
+                />
+                <img
+                  src="assets/images/star.png"
+                  alt="star image"
+                  class="w-[5.5rem] aspect-square"
+                />
+                <img
+                  src="assets/images/star.png"
+                  alt="star image"
+                  class="w-[5.5rem] aspect-square"
+                />
+                <img
+                  src="assets/images/star.png"
+                  alt="star image"
+                  class="w-[5.5rem] aspect-square"
+                />
+                <img
+                  src="assets/images/star.png"
+                  alt="star image"
+                  class="w-[5.5rem] aspect-square"
+                />
+              </div>
+
+              <div class="flex gap-4">
+                <img
+                  src="/assets/images/photo1.svg"
+                  alt="photo"
+                  class="w-[8.4rem] h-[8.4rem] rounded-full"
+                />
+                <p class="flex flex-col">
+                  <span class="font-semibold text-[2rem]">Dr.James L.</span>
+                  <span class="text-[1.4rem] text-[#000000B2]/70"
+                    >psychologist, canada</span
+                  >
+                </p>
+              </div>
+
+              <div
+                class="bg-[#D9D9D9] h-[1.1rem] w-[82%] rounded-[1rem] mt-[5.6rem]"
+              ></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-[2rem]">
+            <p
+              class="max-w-[40rem] font-medium text-[3.2rem] leading-[4.5rem] text-[#282828]"
+            >
+              Bring new business in by getting more online reviews.
+            </p>
+            <p
+              class="text-[2.2rem] leading-[3rem] text-[#000000B2]/70 font-normal max-w-[29.4rem]"
+            >
+              94% Use review to choose new doctor.
+            </p>
+          </div>
+        </div>
+
+        <!-- service2 -->
+        <div
+          class="service-anim2 flex max-md:flex-col-reverse gap-[5.2rem] relative"
+        >
+          <div class="flex flex-col gap-[2rem]">
+            <p
+              class="max-w-[40rem] font-medium text-[3.2rem] leading-[4.5rem] text-[#282828]"
+            >
+              Save time with collaborative tools and automations.
+            </p>
+            <p
+              class="text-[2.2rem] leading-[3rem] text-[#000000B2]/70 font-normal max-w-[29.4rem]"
+            >
+              15+ Staff hours saved per week.
+            </p>
+          </div>
+
+          <div
+            class="w-[40.6rem] h-[31.6rem] z-0 relative before:absolute before:w-full before:h-full before:bg-[#9D86D126]/15 before:rounded-[30px] before:z-[0] before:-top-[3.8rem] before:-right-[3.6rem] before:[box-shadow:-3rem_3rem_3rem_#2828280D]"
+          >
+            <div
+              class="inset-0 absolute rounded-[3rem] bg-white/[.56] [box-shadow:-3rem_3rem_3rem_#2828280D]"
+            >
+              <div class="flex flex-col items-center px-[3.4rem]">
+                <!-- first  -->
+                <div
+                  class="py-[.9rem] px-[1.1rem] flex items-center justify-center gap-[.8rem] w-full mt-[2.7rem] [box-shadow:-1rem_1rem_1rem_#2828280D] rounded-[1rem] bg-[#EFEFEF]"
+                >
+                  <div
+                    class="w-[4.9rem] aspect-square bg-[#2A0896] rounded-full"
+                  ></div>
+
+                  <div
+                    class="w-full flex justify-center-center flex-col gap-[1rem]"
+                  >
+                    <p
+                      class="h-[2px] w-[85%] bg-[#D9D9D9] rounded-[1rem] relative before:absolute before:inset-0 before:bg-[#2A0896] before:w-[30%]"
+                    ></p>
+                    <div
+                      class="bg-[#D9D9D9] h-[1.1rem] w-[82%] rounded-[1rem]"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- middle -->
+
+                <div>
+                  <img
+                    src="assets/images/barchart_cover.png"
+                    alt="barchart_cover.png"
+                    class="w-[23.6rem] h-[4.7rem]"
+                  />
+                  <img
+                    src="assets/images/barchart.png"
+                    alt="barchart"
+                    class="w-[22.5rem] h-[11.4rem]"
+                  />
+                </div>
+
+                <!-- gear -->
+                <div
+                  class="w-[11.5rem] h-[11.5rem] absolute top-1/2 -right-16 -translate-y-1/2"
+                >
+                  <img src="assets/images/gear.svg" alt="gears" />
+                </div>
+
+                <!-- last line -->
+                <div
+                  class="bg-[#D9D9D9] h-[1.1rem] w-[82%] rounded-[1rem] my-[3rem]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- service3 -->
+        <div class="service-anim3 flex max-md:flex-col gap-[5.2rem]">
+          <div
+            class="w-[40.6rem] h-[31.6rem] z-0 relative before:absolute before:w-full before:h-full before:bg-[#9D86D126]/15 before:rounded-[30px] before:z-[0] before:-top-[3.8rem] before:-left-[3.6rem] before:[box-shadow:-3rem_3rem_3rem_#2828280D]"
+          >
+            <div
+              class="inset-0 absolute rounded-[3rem] bg-white/[.56] [box-shadow:-3rem_3rem_3rem_#2828280D] flex flex-col gap-[4.8rem] items-center justify-end"
+            >
+              <!-- first -->
+              <div
+                class="bg-[#EFEFEF] w-[70%] rounded-[1rem] flex flex-col gap-[.9rem] relative [box-shadow:-1rem_1rem_3rem_#00000026] py-[1.5rem] px-[2rem]"
+              >
+                <p class="w-[50%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem]"></p>
+                <p class="w-[80%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem]"></p>
+                <p
+                  class="w-[60%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem] relative z-10"
+                ></p>
+                <img
+                  src="assets/images/triangle.png"
+                  alt="triangle"
+                  class="absolute w-[2.3rem] h-[1.2rem] bottom-0 -left-6 z-0"
+                />
+              </div>
+
+              <!-- second -->
+              <div
+                class="bg-[#EFEFEF] relative w-[70%] rounded-[1rem] flex flex-col items-end gap-[.9rem] [box-shadow:-1rem_1rem_3rem_#00000026] py-[1.5rem] px-[2rem]"
+              >
+                <p class="w-[50%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem]"></p>
+                <p class="w-[80%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem]"></p>
+                <p class="w-[60%] h-[1.1rem] bg-[#D9D9D9] rounded-[1rem]"></p>
+                <img
+                  src="assets/images/t2.png"
+                  alt="triangle"
+                  class="absolute w-[2.3rem] h-[1.2rem] bg-red-70 bottom-0 -right-10 z-0"
+                />
+              </div>
+
+              <!-- Photos -->
+              <div>
+                <img
+                  src="assets/images/phtot2.png"
+                  alt="photo"
+                  class="absolute w-[5.8rem] h-[5.8rem] rounded-full bottom-0 -right-9 -translate-y-1/2"
+                />
+                <img
+                  src="assets/images/photo3.png"
+                  alt="photo"
+                  class="absolute w-[5.8rem] h-[5.8rem] rounded-full top-1/2 -translate-y-full left-0 -translate-x-1/2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[2rem]">
+            <p
+              class="max-w-[40rem] font-medium text-[3.2rem] leading-[4.5rem] text-[#282828]"
+            >
+              Improve patient experience engaging the way they want.
+            </p>
+            <p
+              class="text-[2.2rem] leading-[3rem] text-[#000000B2]/70 font-normal max-w-[29.4rem]"
+            >
+              90% People prefer texts to phone calls.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section
+        class="contact-anim bg-[#DDE9FF] w-full min-h-[58.1rem] rounded-[3rem] mb-[7.6rem] max-w-[116rem] p-[3.4rem] mx-auto max-md:flex-col max-md:gap-16 max-md:text-center flex items-center justify-center"
+      >
+        <!-- left -->
+        <div class="flex-1">
+          <h1 class="font-medium text-[4rem] leading-[5rem]">
+            Seamless collaboration for healthcare teams
+          </h1>
+          <p
+            class="text-[1.8rem] text-[#000000B2]/70 leading-[3rem] w-full max-w-[39rem] mx-auto py-[2.7rem]"
+          >
+            With shared inboxes, any team member can resolve the team’s pending
+            tasks. Individual staff member don’t get overwhelmed and patients
+            are always take care of.
+          </p>
+        </div>
+        <!--  right -->
+        <div class="flex-1">
+          <img src="assets/images/dashboard2.png" alt="dashboard" />
+        </div>
+      </section>
+
+      <!-- Trial section -->
+      <section
+        class="trial-anim w-full mb-[10.8rem] max-w-[116rem] min-h-[38rem] bg-[#D9DEEF] mx-auto rounded-[3rem] overflow-hidden relative"
+      >
+        <img
+          src="assets/images/semicircle.png"
+          alt="semicircle"
+          class="w-[17.3rem] h-[21.6rem] absolute top-0"
+        />
+        <img
+          src="assets/images/semicircle.png"
+          alt="semicircle"
+          class="w-[17.3rem] h-[21.6rem] absolute bottom-0 rotate-180 right-0"
+        />
+
+        <div class="flex justify-center items-center max-md:flex-col">
+          <img
+            src="assets/images/lady.png "
+            alt=" lady"
+            class="w-[37rem] h-[38rem] ml-[4.3rem]"
+          />
+
+          <div class="text-center">
+            <h1 class="font-medium text-[4rem] leading-[5rem]">
+              We work on a month-to-month basis, try for free with no
+              commitments
+            </h1>
+            <p
+              class="mt-[2.2rem] mb-[2.8rem] mx-auto w-full max-w-[58.4rem] max-md:max-w[50rem] text-[1.8rem] text-[#000000B2]/70"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button
+              class="leading-[5rem] px-[2.8rem] text-[2rem] text-white bg-[#4482C2] rounded-[3rem]"
+            >
+              14 Free Trial
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="bg-[#2A0896] pt-[9.2rem] text-white flex flex-col max-md:px-16"
+      >
+        <div
+          class="flex justify-around items-center w-full max-md:flex-col max-md:items-start max-md:gap-24"
+        >
+          <!-- first -->
+          <div class="flex flex-col gap-[2.1rem]">
+            <div class="flex gap-4">
+              <img
+                src="assets/images/logo3.png"
+                alt="logo"
+                class="w-[3.7rem] h-[4.6rem]"
+              />
+              <img
+                src="assets/images/logo4.png"
+                alt="logo4"
+                class="w-[21.5rem] h-[4rem]"
+              />
+            </div>
+            <p class="w-full max-w-[28.7rem]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+
+            <div class="flex gap-4">
+              <img
+                src="assets/images/facebook.png"
+                alt="facebook"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+              <img
+                src="assets/images/twitter.png"
+                alt="twitter.png"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+              <img
+                src="assets/images/insta.png"
+                alt="insta.png"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+            </div>
+          </div>
+
+          <!-- second -->
+
+          <div class="flex flex-col gap-10">
+            <div class="flex gap-4">
+              <img
+                src="assets/images/phone.png"
+                alt="phone.png"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+              <span>+91-8853923455</span>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="assets/images/whatsapp.png"
+                alt="whatsapp.png"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+              <span>+91-4567895478</span>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="assets/images/mail.png"
+                alt="mail.png"
+                class="w-[2.5rem] h-[2.5rem]"
+              />
+              <span>patientgrid@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- third -->
+          <div>
+            <h1 class="text-[2rem] leading-[6rem]">Subscribe Newsletter</h1>
+            <div
+              class="flex items-center justify-center bg-white rounded-[3rem] overflow-hidden"
+            >
+              <input
+                type="text"
+                class="borde-none outline-none max-w-[30rem] leading-[5rem] text-black pl-6"
+              />
+              <button
+                class="w-[5rem] h-[5rem] flex items-center justify-center bg-[#2A52BE] rounded-full"
+              >
+                <img
+                  src="/assets/images/left_arrow.svg"
+                  alt="left arrow icon"
+                  class="w-[1rem] h-[2rem]"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full border-y border-y-white my-10 py-6 flex gap-[5rem] leading-[2.5rem] justify-center items-center"
+        >
+          <span> Products </span>
+          <span>Plans</span>
+          <span>More</span>
+        </div>
+        <p class="text-center pb-6">
+          &copy; Copyright 2023.All Rights Reserved.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
